@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->string('role')->default('USER');
+            $table->string('image')->default('https://firebasestorage.googleapis.com/v0/b/api-images-ec7ab.appspot.com/o/images%2Fpngtree-man-default-avatar-png-image_2813122.jpg?alt=media&token=d77e17e0-5240-4bf3-b91a-25bd0076b9c9');
             $table->timestamps();
         });
     }
